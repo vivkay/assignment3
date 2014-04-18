@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<title>About</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/general.css" rel="stylesheet">
 </head>
 <body>
-    
-    <header class="masthead">
-        <img src="images/logo-white.svg" alt="logo" class="logo">
+  
+      <header class="masthead">
+        <a href="index.html"><img src="images/logo-white.svg" alt="logo" class="logo"></a>
     </header>
     
-    <div class="billboard">
-        <h1>A Terrific Team</h1>
+        <a href="#nav" class="nav-btn" data-state="inactive"><img src="images/hamburger.svg">Navigate</a>
+    
+    <nav class="nav-top">	
+            <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">
+Suits</a></li>
+			</ul>
+        </nav>
+    
+        <div class="billboard-about">
+        <div class="headline-about">
+            <h1 class="h1about">A Terrific Team</h1>
+        </div>
     </div>
-   
+    
     <article>
         
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ornare laoreet. Nulla vitae enim eu leo posuere gravida. Duis tristique commodo risus, vel rutrum magna tincidunt.</h3>
+        <h2><span class="burgundy">We believe in leaving a lasting first impression</span></h2>
+        
+            <figure class="stacked">
+                <img src="images/chris.jpg" alt="Chris">
+                <figcaption><span class="subhead">CEO &amp; Designer</span><p>Chris studied Fashion Design at St. Martins in the UK. He has an eye for quality and founded CP Designs in 2013.</p></figcaption>
+            </figure>
+        
+            <figure class="stacked">
+                <img src="images/jenny2.jpg" alt="Jenny">
+                <figcaption><span class="subhead">Suit Architect</span><p>Jenny has a BA in Fashion Design from CalArts and a passion for working with international textiles.</p></figcaption>
+            </figure>
 
-    </article>
-  
+            <figure class="stacked">
+                <img src="images/lily.jpg" alt="Lily">
+                <figcaption><span class="subhead">Marketing</span><p>Lily has an MA in Marketing from Cambridge and experience with various fashion boutiques in London.</p></figcaption>
+            </figure>
+        
+            <figure class="stacked">
+                <img src="images/marc.jpg" alt="Marc">
+                <figcaption><span class="subhead">Merchandising</span><p>Marc has an MBA specializing in Finance and a passion for growing new businesses.</p></figcaption>
+            </figure>
+        
         <ul class="social">
             <li>
                 <a href="https://www.twitter.com"> 
@@ -47,9 +78,13 @@
         <p>VISIT OUR STORE</p>
         <p>#100-101 Random Street, Ottawa, ON</p>
     </div>
-    
+  
+    </article>
+
     <footer>
+        
         <p class="copyright"><small>Copyright © 2014</small></p>
+        
     </footer>
     
 </body>

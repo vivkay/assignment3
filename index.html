@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<title>Christopher Perry</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,28 +11,44 @@
 <body>
     
     <header class="masthead">
-        <a href="vivkay.github.io/assignment3"><img src="images/logo-white.svg" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="images/logo-white.svg" alt="logo" class="logo"></a>
     </header>
+
+    <a href="#nav" class="nav-btn" data-state="inactive"><img src="images/hamburger.svg">Navigate</a>
     
+    <nav class="nav-top">	
+            <ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="products.html">
+Suits</a></li>
+			</ul>
+        </nav>
+   
     <div class="billboard">
         <div class="headline">
             <h1>Explore <br> the Spring Collection</h1>
         </div>
     </div>
         
-    <h2>Custom Tailored Suits Fit to <span class="burgundy">Inspire</span></h2>
+    <h2><span class="burgundy">Custom Tailored Suits Fit to Inspire</span></h2>
     
-     <figure class="about">
-        <a href="vivkay.github.io/about">
-             <img src="images/satin.jpg" alt="suits">
-        </a>
-    </figure>
+    <div class="buckets">
     
-    <figure class="suits">
-        <a href="vivkay.github.io/suits">
-            <img src="images/suit.jpg">
-        </a>
-    </figure>
+         <figure>
+                <a href="about.html">
+                    <img src="images/satin.jpg" alt="About">
+                    <figcaption class="bucket-links">About</figcaption>
+                </a>
+            </figure>
+
+        <figure>
+                <a href="products.html">
+                    <img src="images/suit.jpg" alt="Suits">
+                    <figcaption class="bucket-links">Suits</figcaption>
+                </a>
+            </figure>  
+        
+    </div>
  
         <ul class="social">
             
@@ -55,7 +73,11 @@
         </ul>
     
     <footer>
+        
         <p class="copyright"><small>Copyright © 2014</small></p>
+        
+        <script src="js/toggle.js"></script>
+        
     </footer>
     
 </body>

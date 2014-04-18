@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<title>Suits</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,24 +9,60 @@
 </head>
 <body>
     
-    <header class="masthead">
-        <img src="images/logo-white.svg" alt="logo" class="logo">
+   <header class="masthead">
+        <a href="index.html"><img src="images/logo-white.svg" alt="logo" class="logo"></a>
     </header>
     
+    <a href="#nav" class="nav-btn" data-state="inactive"><img src="images/hamburger.svg">Navigate</a>
+    
+    <nav class="nav-top">	
+            <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">
+About</a></li>
+			</ul>
+        </nav>
+    
     <div class="billboard-suits">
-        <div class="headline">
-            <h1>Perfect Pairings</h1>
+        <div class="headline-suits">
+            <h1 class="h1suits">Perfect Pairings</h1>
         </div>
     </div>
    
     <article>
         
-        <h2>Custom Tailored Suits Fit to <span class="burgundy">Inspire</span></h2>
-         
-         <div class="about">
-        <img src="images/satin.jpg" alt="suits">
-    </div>
+        <h2><span class="burgundy">Welcome to the new Spring Collection</span></h2>
+                
+         <figure class="stacked">
+                <img src="images/suit-yellow.jpg" alt="Yellow Suit">
+                <figcaption><span class="subhead">Premium Pinstripe</span><p>Premium midnight blue pinstripe with canary yellow satin lining and accessories.</p><p><span class="burgundy">$299.99</span></p></figcaption>
+            </figure>
         
+            <figure class="stacked">
+                <img src="images/suit-cyan.jpg" alt="Cyan Suit">
+                <figcaption><span class="subhead">The Silver-Lining</span><p>Navy textured suit with ice-blue handkerchief and silver lining.</p><p><span class="burgundy">$199.99</span></p></figcaption>
+            </figure>
+        
+            <figure class="stacked">
+                <img src="images/suit-green.jpg" alt="Green Suit">
+                <figcaption><span class="subhead">Egyptian Jade</span><p>Grey twill suit with premium jade-green Egyptian Cotton lining and matching accessories.</p><p><span class="burgundy">$199.99</span></p></figcaption>
+            </figure>
+
+            <figure class="stacked">
+                <img src="images/suit-lilac.jpg" alt="Lilac Suit">
+                <figcaption><span class="subhead">Lightweight Lilac</span><p>Indigo pinstripe suit with lightweight fabric for extra comfort and a lilac lining.</p><p><span class="burgundy">$399.99</span></p></figcaption>
+            </figure>
+        
+            <figure class="stacked">
+                <img src="images/suit-orange.jpg" alt="Peach Suit">
+                <figcaption><span class="subhead">The Peach Satin Line</span><p>Midnight blue Micro fiber silk-blend wool with Peach highlights.</p><p><span class="burgundy">$399.99</span></p></figcaption>
+            </figure>
+        
+            <figure class="stacked">
+                <img src="images/suit-pink.jpg" alt="Pink Suit">
+                <figcaption><span class="subhead">The Pink Satin Line</span><p>Essential Textured Navy with playful pink highlights and accessories.</p><p><span class="burgundy">$199.99</span></p></figcaption>
+            </figure>
+            
         <ul class="social">
             <li>
                 <a href="https://www.twitter.com"> 
@@ -50,7 +87,9 @@
     </article>
     
     <footer>
+        
         <p class="copyright"><small>Copyright © 2014</small></p>
+        
     </footer>
     
 </body>
