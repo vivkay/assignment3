@@ -26,13 +26,13 @@ img {
 }
 
 body {
-    margin: 0rem 0 0;
+    margin: 0;
     padding: 0;
 }
 
 .masthead {
-    background-color: #000033;
     overflow: hidden;
+    background-color: #000033;
 }
 
 .logo {
@@ -42,11 +42,24 @@ body {
     float: right;
 }
 
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	height: 1.5rem;
+    width: 2.5rem;
+	overflow: hidden;
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+	background: transparent url("../images/hamburger.svg") no-repeat 0 0;
+	text-indent: 100%;
+	white-space: nowrap; 
+}
+
 .nav-top {
 	max-height: 0; 
     background-color: #000033;
     overflow:hidden;
-
 	-moz-transition: all 250ms linear;
 	-o-transition: all 250ms linear;
 	-webkit-transition: all 250ms linear;
@@ -73,110 +86,99 @@ body {
 	text-decoration: none;
 }
 
-.nav-btn,
-.nav-btn:link,
-.nav-btn:visited {
-	height: 2rem;
-    width: 2.5rem;
-	overflow: hidden;
-    position: absolute;
-    top: 1rem;
-    left: 5%;
-	background: transparent url("../images/hamburger.svg") no-repeat 0 0;
-	text-indent: 100%;
-	white-space: nowrap; 
-}
-
 .billboard {
     overflow: hidden;
     background-image: url(../images/billboard.jpg);
     background-color: black;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: 100%;
 }
 
 .billboard-about {
     overflow: hidden;
+    width: 100%;
+    height: 10rem;
     background-image: url(../images/city.jpg);
-    background-color: black;
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 15rem;
 }
 
 .billboard-suits {
     overflow: hidden;
+    width: 100%;
+    height: 10rem;
     background-image: url(../images/wine.jpg);
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 15rem;
+}
+
+h1 {
+    margin: 10rem 0rem;
+    padding: 0.25rem 5%;
+    top: -2.75rem;
+    position: relative;
+    font-family: "Cardo", serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.h1about {
+    position: relative;
+    top: .75rem;
+    padding: 0.25rem 5%;
+    margin: 3.5rem 0rem;
+    font-family: "Cardo", serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.h1suits {
+    position: relative;
+    top: .75rem;
+    padding: 0.25rem 5%;
+    margin: 3.5rem 0rem;
+    font-family: "Cardo", serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 .headline {
     margin: 0;
     padding: 0;
     height: 5rem;
-    background-color: rgba(204, 204, 153, .4);
-}
-
-.headline-suits {
-    margin: 0;
-    padding: 0;
-    height: 5rem;
-    background-color: rgba(102, 0, 0, .4);
+    background-color: rgba(0, 0, 51, .4);
 }
 
 .headline-about {
-    margin: 0;
+    height: 4rem;
     padding: 0;
-    height: 5rem;
-    background-color: rgba(0, 0, 51, .4);
+    margin: 5rem 0 -1rem 0;
+    background-color: rgba(51, 0, 0, .5);
+}
+
+.headline-suits {
+    height: 4rem;
+    padding: 0;
+    margin: 5rem 0 -1rem 0;
+    background-color: rgba(102, 0, 0, .4);
 }
 
 p {
     margin-top: 0;
-}
-
-h1 {
-    position: relative;
-    top: -3rem;
-    font-family: "Cardo", serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: white;
-    text-transform: uppercase;
-    padding: 0.25rem 5%;
-    margin: 10rem 0rem; 
-}
-
-.h1suits {
-    position: relative;
-    top: 1rem;
-    font-family: "Cardo", serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: white;
-    text-transform: uppercase;
-    padding: 0.25rem 5%;
-    margin: 10rem 0rem; 
-}
-
-.h1about {
-    position: relative;
-    top: 1rem;
-    font-family: "Cardo", serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: white;
-    text-transform: uppercase;
-    padding: 0.25rem 5%;
-    margin: 10rem 0rem; 
 }
 
 h2 {
@@ -195,15 +197,6 @@ h2 {
     font-size: 1rem;
     color: #993333;
     margin-bottom: 0;
-}
-
-h5 {
-    font: "Didot", "Garamond", serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #000033;
-    margin-bottom: 0;
-    margin-top: .5rem;
 }
 
 .bucket-links {
@@ -233,25 +226,33 @@ h5 {
     margin: 0;
     padding:0 0 4rem;
 }
-
-.details{
-    font-family: "Didot", "Garamond", serif;
-    font-weight: lighter;
-    font-size: 1rem;
-    color: black;
-    margin: .25rem 0 2.5em;
-}
-  
+ 
 .burgundy {
     color: #993333;
 }
 
-.about {
-    float: left;
-}
-
 article {
     margin:0;
+    padding: 0;
+}
+
+.stacked {
+    overflow: hidden;
+    margin: 0 5% 1.5rem;
+    padding: 0;
+}
+
+.stacked img {
+    float: left;
+    width: 45%; 
+    margin: 0 5% 0 0;
+    padding: 0;
+}
+
+.stacked figcaption {
+    float: right;
+    width: 50%;
+    margin: 0;
     padding: 0;
 }
 
@@ -285,11 +286,6 @@ article {
     padding: 2rem;
 }
 
-.name {
-    font-size: 1rem;
-    color: gray;
-}  
-
 footer {
     margin: 0;
     padding: 5rem 5%;
@@ -297,94 +293,4 @@ footer {
     overflow: hidden;
     color: white;
     clear: both;
-}
-
-.left-image {
-    float: left;
-    width: 50%;
-    margin-right: 0.25rem;
-    margin-bottom: 2rem;
-    display: inline;
-}
-
-.buttons {
-    margin: 0;
-    padding: 0;
-    height: 8rem;
-    overflow: hidden;
-}
-
-.left-button {
-    position: relative;
-    float: left;
-    width: 50%;
-    margin: 0;
-    display: inline;
-}
-
-.right-button {
-    position: relative;
-    float: right;
-    width: 50%;
-    margin-left: 0;
-    display: inline;
-}
-
-.pairings {
-    margin: 0;
-    padding: 0;
-    height: 8rem;
-    overflow: hidden;
-}
-
-.pairs {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 5rem;
-    display: inline;
-    background: gray;
-    padding: 0% 0% 0% 5%;
-}
-
-.left-pair {
-    position: relative;
-    float: left;
-    width: 25%;
-    margin: 0;
-    display: inline;
-}
-
-.right-pair {
-    position: relative;
-    float: left;
-    width: 25%;
-    margin-left: 0;
-    display: inline;
-}
-
-.right-info {
-    float: right;
-    width: 30%;
-    display: inline-block;
-}
-
-.stacked {
-    overflow: hidden;
-    margin: 0 5% 1.5rem;
-    padding: 0;
-}
-
-.stacked img {
-    float: left;
-    width: 45%; 
-    margin: 0 5% 0 0;
-    padding: 0;
-}
-
-.stacked figcaption {
-    float: right;
-    width: 50%;
-    margin: 0;
-    padding: 0;
 }
