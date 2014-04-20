@@ -91,8 +91,8 @@ body {
     overflow: hidden;
     background-image: url(../images/billboard.jpg);
     background-color: black;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: absolute;
     background-size: 100%;
 }
 
@@ -101,7 +101,7 @@ body {
     background-image: url(../images/city.jpg);
     background-color: black;
     background-repeat: no-repeat;
-    background-position: absolute;
+    background-position: center center;
     background-size: 100%;
     height: 15rem;
 }
@@ -110,7 +110,7 @@ body {
     overflow: hidden;
     background-image: url(../images/wine.jpg);
     background-repeat: no-repeat;
-    background-position: repeat;
+    background-position: center center;
     background-size: 100%;
     height: 15rem;
 }
@@ -221,7 +221,7 @@ h5 {
 
 .buckets {
     position: relative;
-    size: 50%;
+    width: 50%;
     display: inline;
 }
 
