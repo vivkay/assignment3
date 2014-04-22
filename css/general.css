@@ -132,7 +132,7 @@ h1 {
 
 .billboard-about h1 {
     margin: 3.5rem 0rem;
-    padding: 0.25rem 5%;
+    padding: .75rem 5%;
     top: .75rem;
     position: relative;
     font-family: "Cardo", serif;
@@ -141,12 +141,13 @@ h1 {
     line-height: 2.5rem;
     color: white;
     text-transform: uppercase;
+    background-color: rgba(51, 0, 0, .5);
 }
 
-.h1suits {
+.billboard-suits h1 {
     position: relative;
     top: .75rem;
-    padding: 0.25rem 5%;
+    padding: .75rem 5%;
     margin: 3.5rem 0rem;
     font-family: "Cardo", serif;
     font-weight: normal;
@@ -154,6 +155,7 @@ h1 {
     line-height: 2.5rem;
     color: white;
     text-transform: uppercase;
+    background-color: rgba(102, 0, 0, .4);
 }
 
 .headline {
@@ -161,13 +163,6 @@ h1 {
     padding: 0;
     height: 5rem;
     background-color: rgba(0, 0, 51, .4);
-}
-
-.headline-about {
-    height: 4rem;
-    padding: 0;
-    margin: 5rem 0 -1rem 0;
-    background-color: rgba(51, 0, 0, .5);
 }
 
 .headline-suits {
