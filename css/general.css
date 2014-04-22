@@ -165,13 +165,6 @@ h1 {
     background-color: rgba(0, 0, 51, .4);
 }
 
-.headline-suits {
-    height: 4rem;
-    padding: 0;
-    margin: 5rem 0 -1rem 0;
-    background-color: rgba(102, 0, 0, .4);
-}
-
 p {
     margin-top: 0;
 }
