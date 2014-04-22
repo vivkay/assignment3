@@ -130,7 +130,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.h1about {
+.billboard-about h1 {
     margin: 3.5rem 0rem;
     padding: 0.25rem 5%;
     top: .75rem;
